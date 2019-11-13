@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model di vestiti</title>
+</head>
+<body>
+<form name="f1" action="inserisciVestito.php" method="GET">
+    <h1>Vestito</h1>
+    Cognome: &nbsp;<input type="text" name="cognome" value=""> <br>
+    Nome:&nbsp; <input type="text" name="nome" value=""> <br>
+    Email: &nbsp; <input type="email" name="email" value=""><br>
+    Password:&nbsp; <input type="password" name="password" value=""> <br>
+
+    Tipo di vestito:&nbsp;
+    <select name = "tipo">
+        <option>Uomo</option>
+        <option>Donna</option>
+        <option>Unizex</option>
+    </select> <br>
+    Colore vestito: &nbsp;
+    <input type="radio" name="colore" value="nero" >Nero
+    <input type="radio" name="colore" value="bianco">Bianco
+    <input type="radio" name="colore" value="blu">Blu<br>
+    Accessori:
+    <input type="checkbox" name="accessori[]" value = "cintura">Cintura&nbsp;
+    <input type="checkbox" name="accessori[]" value = "orologio">Orologio&nbsp;
+    <input type="checkbox" name="accessori[]" value = "occhiali">Occhiali&nbsp;
+    <input type="checkbox" name="accessori[]" value = "cappello">Cappello&nbsp;
+    <input type="checkbox" name="accessori[]" value = "scarpe">Scarpe <br>
+    Immagine: &nbsp; <input type="file" name="nomeFile"> <br>
+    <input type="submit" name="bInvia" value="invia">
+</form>
+
+</body>
+</html>

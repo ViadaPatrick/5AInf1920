@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Vettore random</title>
+</head>
+<body>
+<!-- form: invio di informazioni al server-->
+<!--devo invocare un url, specificata dall'attributo action,
+    con il metodo GET-->
+<!--url sarà cosi formata:
+    action+ "?" + name1+ value1 + "&"+ name2+ value2
+      il tutto avviene alla pressione di un bottone "submit"-->
+<form name="f1" action="EsRandomACasa.php" method="GET">
+    Val min:<input type="text" name="min" /><br>
+    Val max:<input type="text" name="max" /><br>
+    Numero di numeri da generare:<input type="text" name="num" /><br>
+    <input type="submit" name="btninvia" value="invia" />
+</form>
+</body>
+</html>
